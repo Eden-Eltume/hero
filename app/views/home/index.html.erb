@@ -6,9 +6,37 @@
   <%= link_to 'Click here to generate a new superhero', root_path%>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Content title</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="row">
+      <div class="col-md-4">
+      <img src="<%= @avatar %>">
+      </div>
+      <div class="col-md-4">
+        <h3>
+        Superhero Name: <br/> 
+        <span class="red"> <%= @hero_name %> </span>
+        </h3>
+        
+        <h3>
+        Superhero Power: <br/> 
+        <span class="red"> <%= @hero_power %> </span>
+        </h3>
+        <br/>
+        
+        <h4>
+        Your undercover day job is:
+        <span class="corp_red"> <%= @corp_title %> </span>
+        </h4> 
+
+        <h4>
+        Your corporate superpower is:
+        <span class="corp_red"> <%= @corp_power.titleize %> </span>
+        </h4> 
+        <br/>
+      </div>
+      <div class="col-md-4">
+        <%# space left for advertisments %>
+      </div>
+    </div>
   </div>
   <div class="card-footer">
   <%= link_to 'Create a whole superhero team', home_team_path%>

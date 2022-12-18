@@ -44,6 +44,9 @@ gem "bootsnap", require: false
 
 gem 'bootstrap', '~> 5.2.2'
 
+# generates fake data to use in our app
+gem 'faker', '~> 3.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
